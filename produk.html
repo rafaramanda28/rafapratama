@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semua Produk – Pojok Gadget</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="produk">
+  <header class="topbar" id="site-header"></header>
+
+  <main class="page">
+    <h1>Semua produk</h1>
+    <div class="toolbar">
+      <input id="cari" type="search" placeholder="Cari nama produk" aria-label="Cari produk">
+      <select id="urut" aria-label="Urutkan produk">
+        <option value="populer">Urutan: terlaris</option>
+        <option value="murah">Harga terendah</option>
+        <option value="mahal">Harga tertinggi</option>
+      </select>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Kategori"></div>
+    <p class="count" id="hasil" role="status"></p>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+</body>
+</html>
