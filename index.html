@@ -9,26 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <a class="skip" href="#produk">Lewati ke daftar produk</a>
-
-  <header class="topbar">
-    <a class="brand" href="#">Pojok Gadget</a>
-    <nav aria-label="Menu utama">
-      <a href="#produk">Produk</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
-    <a class="cart" href="#">Keranjang <span>0</span></a>
-  </header>
+<body data-page="home">
+  <header class="topbar" id="site-header"></header>
 
   <main>
     <section class="hero">
       <div class="hero-text">
         <h1>Gadget pilihan dengan harga jelas dan garansi resmi</h1>
         <p>Ponsel, jam pintar, audio, dan aksesori yang sudah dipilih dan diuji. Pesan sebelum pukul 15.00, kami kirim hari itu juga.</p>
-        <a class="btn" href="#produk">Belanja sekarang</a>
+        <a class="btn" href="produk.html">Belanja sekarang</a>
       </div>
       <div class="hero-devices" aria-hidden="true">
         <div class="hd d1"></div>
@@ -37,74 +28,15 @@
       </div>
     </section>
 
-    <section class="catalog" id="produk">
-      <h2>Terlaris minggu ini</h2>
-      <div class="grid">
-
-        <article class="product">
-          <div class="shot" style="--c: var(--cobalt)"><div class="dev tall" aria-hidden="true"></div><span>6,7 inci, 256 GB</span></div>
-          <h3>Ponsel Nova 12</h3>
-          <p class="notes">Layar AMOLED 120 Hz, baterai 5.000 mAh.</p>
-          <div class="buy">
-            <strong class="price">Rp 3.499.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="shot" style="--c: var(--mint)"><div class="dev round" aria-hidden="true"></div><span>1,4 inci, GPS</span></div>
-          <h3>Jam Pintar Orbit</h3>
-          <p class="notes">Pantau detak jantung dan tidur, tahan air 5 ATM.</p>
-          <div class="buy">
-            <strong class="price">Rp 899.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="shot" style="--c: var(--amber)"><div class="dev round" aria-hidden="true"></div><span>Bluetooth 5.3, ANC</span></div>
-          <h3>Earbuds Pulse</h3>
-          <p class="notes">Peredam bising aktif, baterai 30 jam dengan case.</p>
-          <div class="buy">
-            <strong class="price">Rp 649.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="shot" style="--c: var(--rose)"><div class="dev round" aria-hidden="true"></div><span>20 W, tahan cipratan</span></div>
-          <h3>Speaker Boomer</h3>
-          <p class="notes">Suara jernih, baterai tahan 12 jam.</p>
-          <div class="buy">
-            <strong class="price">Rp 459.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="shot" style="--c: var(--silver)"><div class="dev wide" aria-hidden="true"></div><span>20.000 mAh, 65 W</span></div>
-          <h3>Power Bank Volt</h3>
-          <p class="notes">Pengisian cepat, cukup untuk mengisi laptop.</p>
-          <div class="buy">
-            <strong class="price">Rp 329.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
-        <article class="product">
-          <div class="shot" style="--c: var(--slate)"><div class="dev wide" aria-hidden="true"></div><span>Tenkeyless, hot-swap</span></div>
-          <h3>Keyboard Mekanik Klik</h3>
-          <p class="notes">Bisa Bluetooth atau kabel, switch mudah diganti.</p>
-          <div class="buy">
-            <strong class="price">Rp 749.000</strong>
-            <button class="add" type="button">Tambah ke keranjang</button>
-          </div>
-        </article>
-
+    <section class="catalog">
+      <div class="section-head">
+        <h2>Terlaris minggu ini</h2>
+        <a class="more" href="produk.html">Lihat semua produk</a>
       </div>
+      <div class="grid" id="featured"></div>
     </section>
 
-    <section class="services" id="layanan">
+    <section class="services">
       <div>
         <h3>Garansi resmi 1 tahun</h3>
         <p>Semua produk bergaransi resmi, lengkap dengan kartu garansi dan nota pembelian.</p>
@@ -120,16 +52,6 @@
     </section>
   </main>
 
-  <footer class="footer" id="kontak">
-    <div>
-      <strong>Pojok Gadget</strong>
-      <p>Jl. Contoh No. 12, Bekasi, Jawa Barat</p>
-    </div>
-    <div>
-      <p>WhatsApp: 0812-0000-0000</p>
-      <p>Email: halo@pojokgadget.example</p>
-    </div>
-    <p class="copy">© 2026 Pojok Gadget. Semua hak dilindungi.</p>
-  </footer>
+  <footer class="footer" id="site-footer"></footer>
 </body>
 </html>
